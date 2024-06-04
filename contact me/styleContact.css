@@ -1,0 +1,83 @@
+.forum_contact {
+    position: relative; /* Pour que les éléments absolus soient positionnés par rapport à ce conteneur */
+    display: flex;
+    top: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center
+    
+}
+
+.container_input1,
+.container_input2 {
+    position: relative; /* Définit le contexte de positionnement pour les éléments enfants absolus */
+    margin-bottom: 10px; /* Espace entre les conteneurs */
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    color: #929191;
+    background-color: white;
+    padding: 0 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container_input1:focus-within label {
+    top: 0;
+    font-size: 12px;
+    color: #dc2f2f;
+    border-radius: 12px;
+}
+.container_input2:focus-within label{
+    top: 0;
+    font-size: 12px;
+    color: #dc2f2f;
+    border-radius: 12px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 100%; /* Le champ de texte prendra toute la largeur du conteneur */
+    padding: 5px;
+    border: 1px solid #c30e0e;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pour inclure la bordure et le rembourrage dans la largeur */
+    margin-top: 3px; /* Espace entre le label et le champ de texte */
+}
+/* social media*/
+.social_media{
+    position: fixed;
+    top:50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.social_media > div {
+color:  white;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+font-weight: bold;
+height: 50px;
+cursor: pointer;
+}
+.facebook{
+    background-color: rgb(9, 85, 184);
+}
+.facebook:hover{
+    background-color: rgb(55, 120, 241);
+}
+.linkedin{
+    background-color: rgb(18, 124, 236);
+}
+.github{
+    background-color: rgb(9, 85, 184);
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,96 @@
+
+/* Définition des variables CSS */
+:root {
+--primary-color: #007bff;
+--secondary-color: #0056b3;
+--border-color: #ccc;
+--border-radius: 5px;
+}
+
+/* Styles de base */
+.container {
+max-width: 600px;
+margin: 50px auto;
+padding: 20px;
+border: 1px solid var(--border-color);
+border-radius: var(--border-radius);
+background-color: #f9f9f9;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+margin-bottom: 15px;
+width: 600px;
+}
+.input-group1 {
+margin-bottom: 15px;
+width: 580px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input[type="number"], select {
+width: 90%;
+padding: 8px;
+margin-bottom: 10px;
+border-radius: var(--border-radius);
+border: 1px solid var(--border-color);
+transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus, select:focus {
+outline: none;
+border-color: var(--primary-color);
+}
+
+button {
+    width: 100%; /* Remplir la largeur */
+    padding: 10px; /* Ajoute un peu de rembourrage */
+    background: linear-gradient(to right, #007bff, #4d0249); /* Dégradé de couleur */
+    color: #fff; /* Couleur du texte blanc */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s; /* Transition fluide pour la couleur de fond */
+    margin-top: 10px; /* Ajout d'un espace au-dessus du bouton */
+}
+button:hover {
+    background: linear-gradient(to right, #4d0249, #007bff); /* Dégradé de couleur inversé */
+}
+
+#result {
+margin-top: 10px;
+font-weight: bold;
+color: var(--primary-color);
+}
+
+#rates-update-info {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Animation pour le résultat */
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+#result {
+animation: fadeIn 0.5s ease-in-out;
+}
+#hero{
+    margin-top: 60px;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
